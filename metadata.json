@@ -1,0 +1,6 @@
+{
+  "name": "Candidate Portal - Login & Register",
+  "description": "Candidate authentication and registration portal with Playwright and Typebot automation integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
