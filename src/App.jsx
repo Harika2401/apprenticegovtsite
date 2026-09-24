@@ -195,17 +195,13 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-[#f8f9fa] flex flex-col justify-between font-sans text-gray-800 antialiased selection:bg-blue-100 selection:text-blue-900">
-      {/* Top Main Section */}
-      <main className="flex-1 flex flex-col items-center justify-center px-4 py-12">
-        <div className="w-full max-w-lg bg-white rounded-lg p-6 sm:p-10 shadow-xs border border-gray-200">
-          
-          {/* Radio Switcher: Login as a candidate vs Register as a candidate */}
-          <div className="flex items-center justify-center gap-8 mb-8 pb-6 border-b border-gray-100">
-            {/* Login Radio */}
+    <div className="min-h-screen bg-[#f3f3f3] flex flex-col justify-between font-sans text-[#2d2d2d] antialiased selection:bg-blue-100 selection:text-blue-900">
+      <main className="flex-1 flex items-center justify-center px-4 py-8 sm:py-12">
+        <div className="w-full max-w-[760px]">
+          <div className="flex items-center justify-between gap-8 mb-8">
             <label
               htmlFor="login-radio"
-              className="flex items-center gap-2.5 cursor-pointer text-sm font-normal text-gray-800 select-none group"
+              className="flex flex-1 items-center justify-start gap-3 cursor-pointer text-[23px] font-normal text-[#2c2c2c] select-none"
             >
               <input
                 type="radio"
@@ -221,25 +217,22 @@ export default function App() {
                 className="sr-only"
               />
               <span
-                className={`w-4 h-4 rounded-full border flex items-center justify-center transition ${
+                className={`relative inline-flex h-6 w-6 items-center justify-center rounded-full border-2 transition ${
                   authMode === 'login'
-                    ? 'border-[#e02b64] bg-white'
-                    : 'border-gray-400 bg-white group-hover:border-gray-600'
+                    ? 'border-[#f15a8d] bg-white'
+                    : 'border-[#b9b9b9] bg-white'
                 }`}
               >
                 {authMode === 'login' && (
-                  <span className="w-2 h-2 rounded-full bg-[#e02b64]" />
+                  <span className="h-3 w-3 rounded-full bg-[#f15a8d]" />
                 )}
               </span>
-              <span className={authMode === 'login' ? 'font-medium text-gray-900' : 'text-gray-700'}>
-                Login as a candidate
-              </span>
+              <span>Login as a candidate</span>
             </label>
 
-            {/* Register Radio */}
             <label
               htmlFor="register-radio"
-              className="flex items-center gap-2.5 cursor-pointer text-sm font-normal text-gray-800 select-none group"
+              className="flex flex-1 items-center justify-start gap-3 cursor-pointer text-[23px] font-normal text-[#2c2c2c] select-none"
             >
               <input
                 type="radio"
@@ -255,19 +248,17 @@ export default function App() {
                 className="sr-only"
               />
               <span
-                className={`w-4 h-4 rounded-full border flex items-center justify-center transition ${
+                className={`relative inline-flex h-6 w-6 items-center justify-center rounded-full border-2 transition ${
                   authMode === 'register'
-                    ? 'border-[#e02b64] bg-white'
-                    : 'border-gray-400 bg-white group-hover:border-gray-600'
+                    ? 'border-[#f15a8d] bg-white'
+                    : 'border-[#b9b9b9] bg-white'
                 }`}
               >
                 {authMode === 'register' && (
-                  <span className="w-2 h-2 rounded-full bg-[#e02b64]" />
+                  <span className="h-3 w-3 rounded-full bg-[#f15a8d]" />
                 )}
               </span>
-              <span className={authMode === 'register' ? 'font-medium text-gray-900' : 'text-gray-700'}>
-                Register as a candidate
-              </span>
+              <span>Register as a candidate</span>
             </label>
           </div>
 

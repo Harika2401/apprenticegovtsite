@@ -27,7 +27,7 @@ export function CaptchaBox({
   return (
     <div className="flex flex-col items-center my-4">
       {/* CAPTCHA Display Card matching apprenticeshipindia portal style */}
-      <div className="border border-gray-300 rounded p-1 bg-white shadow-xs inline-block">
+      <div className="border border-gray-300 rounded p-1 bg-white shadow-sm inline-block">
         <div className="relative border border-gray-200 overflow-hidden rounded bg-white">
           <canvas
             ref={canvasRef}
@@ -73,7 +73,7 @@ export function CaptchaBox({
             data-testid="refresh-captcha-btn"
             onClick={onRefreshCaptcha}
             title="Refresh CAPTCHA"
-            className="w-8 h-8 flex items-center justify-center bg-[#28a745] hover:bg-[#218838] text-white rounded transition shadow-xs cursor-pointer active:scale-95"
+            className="w-8 h-8 flex items-center justify-center bg-[#28a745] hover:bg-[#218838] text-white rounded transition shadow-sm cursor-pointer active:scale-95"
             aria-label="Refresh CAPTCHA"
           >
             <RotateCw className="w-4 h-4" />
@@ -86,7 +86,7 @@ export function CaptchaBox({
             data-testid="audio-captcha-btn"
             onClick={handleAudioPlay}
             title="Listen to CAPTCHA"
-            className="w-8 h-8 flex items-center justify-center bg-[#28a745] hover:bg-[#218838] text-white rounded transition shadow-xs cursor-pointer active:scale-95"
+            className="w-8 h-8 flex items-center justify-center bg-[#28a745] hover:bg-[#218838] text-white rounded transition shadow-sm cursor-pointer active:scale-95"
             aria-label="Play audio CAPTCHA"
           >
             <Volume2 className="w-4 h-4" />

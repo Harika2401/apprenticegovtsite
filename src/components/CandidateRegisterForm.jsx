@@ -156,7 +156,7 @@ export function CandidateRegisterForm({
               data-testid="find-details-btn"
               onClick={handleFindDetails}
               disabled={isSearchingIti}
-              className="bg-[#ff8da1] hover:bg-[#ff758f] active:bg-[#f06292] text-white font-medium rounded-xl px-5 py-2 text-center text-sm leading-tight shadow-xs transition duration-150 cursor-pointer disabled:opacity-60 shrink-0 min-w-[95px] select-none"
+              className="bg-[#ff8da1] hover:bg-[#ff758f] active:bg-[#f06292] text-white font-medium rounded-xl px-5 py-2 text-center text-sm leading-tight shadow-sm transition duration-150 cursor-pointer disabled:opacity-60 shrink-0 min-w-[95px] select-none"
             >
               {isSearchingIti ? (
                 'Finding...'

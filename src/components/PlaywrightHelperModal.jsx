@@ -85,7 +85,7 @@ runCandidateAuth('candidate@example.com', true);
       </button>
 
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-xs p-4 overflow-y-auto">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4 overflow-y-auto">
           <div className="bg-white rounded-xl shadow-2xl max-w-2xl w-full max-h-[90vh] flex flex-col overflow-hidden border border-gray-200">
             {/* Modal Header */}
             <div className="px-6 py-4 bg-[#141d5b] text-white flex items-center justify-between">
@@ -110,7 +110,7 @@ runCandidateAuth('candidate@example.com', true);
 
               {/* Selectors Table */}
               <div>
-                <h4 className="font-semibold text-gray-900 mb-2 text-xs uppercase tracking-wider">
+                <h4 className="font-semibold text-gray-900 mb-2 text-xs uppercase tracking-[0.12em]">
                   Target DOM Selectors
                 </h4>
                 <div className="overflow-x-auto border border-gray-200 rounded-lg text-xs font-mono">
@@ -211,7 +211,7 @@ runCandidateAuth('candidate@example.com', true);
               {/* Ready Playwright Code */}
               <div>
                 <div className="flex items-center justify-between mb-2">
-                  <h4 className="font-semibold text-gray-900 text-xs uppercase tracking-wider">
+                  <h4 className="font-semibold text-gray-900 text-xs uppercase tracking-[0.12em]">
                     Copyable Playwright Script (JavaScript)
                   </h4>
                   <button

@@ -37,10 +37,10 @@ export function CandidateLoginForm({
       )}
 
       {/* Field: Enter Your Email ID* */}
-      <div className="mb-4">
+      <div className="mb-5">
         <label
           htmlFor="email"
-          className="block text-center text-sm font-medium text-gray-700 mb-2"
+          className="block text-[26px] font-normal text-[#323232] mb-3"
         >
           Enter Your Email ID<span className="text-red-500">*</span>
         </label>
@@ -55,10 +55,10 @@ export function CandidateLoginForm({
             placeholder="Enter Your Email ID"
             autoComplete="email"
             required
-            className="w-full px-4 py-3 text-sm text-gray-800 bg-white border border-gray-300 rounded-lg pr-11 focus:outline-none focus:border-blue-700 focus:ring-1 focus:ring-blue-700 transition placeholder-gray-400"
+            className="w-full h-[64px] px-4 pr-12 text-[22px] text-gray-800 bg-white border border-[#cfcfcf] rounded-[10px] focus:outline-none focus:border-[#8d8d8d] transition placeholder:text-[#7d7d7d]"
           />
-          <div className="absolute inset-y-0 right-0 pr-3.5 flex items-center pointer-events-none text-rose-500">
-            <User className="w-5 h-5" strokeWidth={1.75} />
+          <div className="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none text-[#ef5c8b]">
+            <User className="w-7 h-7" strokeWidth={1.75} />
           </div>
         </div>
       </div>
@@ -78,7 +78,7 @@ export function CandidateLoginForm({
           id="submit-btn"
           data-testid="submit-btn"
           disabled={isLoading}
-          className="w-full py-3.5 px-4 bg-[#141d5b] hover:bg-[#0f1747] active:bg-[#090e30] text-white font-semibold text-base rounded-md transition duration-150 shadow-sm cursor-pointer disabled:opacity-60 flex items-center justify-center tracking-wide"
+          className="w-full py-5 px-4 bg-[#1d2b7b] hover:bg-[#19266e] active:bg-[#111d57] text-white font-semibold text-[28px] rounded-[10px] transition duration-150 shadow-sm cursor-pointer disabled:opacity-60 flex items-center justify-center tracking-wide"
         >
           {isLoading ? (
             <div className="flex items-center gap-2">
@@ -92,42 +92,42 @@ export function CandidateLoginForm({
       </div>
 
       {/* Resend activation link */}
-      <div className="mt-4 text-center">
+      <div className="mt-4 text-right">
         <button
           type="button"
           id="resend-activation-link"
           data-testid="resend-activation-link"
           onClick={onResendActivation}
-          className="text-xs text-rose-500 hover:text-rose-600 hover:underline transition font-medium cursor-pointer"
+          className="text-[20px] text-[#ef5c8b] hover:text-[#d74d7b] underline-offset-2 transition font-normal cursor-pointer"
         >
           Resend activation link ?
         </button>
       </div>
 
       {/* Quick Test Accounts for user & Playwright testing */}
-      <div className="mt-8 pt-4 border-t border-gray-200">
-        <p className="text-[12px] font-semibold text-gray-500 uppercase tracking-wider text-center mb-2">
+      <div className="mt-8">
+        <p className="text-[18px] font-normal text-[#2d2d2d] text-left mb-3">
           Test Credentials (or enter your own / test wrong credentials)
         </p>
-        <div className="flex flex-wrap justify-center gap-2">
+        <div className="flex flex-wrap gap-2">
           <button
             type="button"
             onClick={() => onSelectSampleCandidate('candidate@example.com')}
-            className="text-xs px-2.5 py-1 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded transition cursor-pointer border border-gray-300"
+            className="text-[18px] px-3 py-2 bg-white hover:bg-gray-50 text-gray-700 rounded-md transition cursor-pointer border border-[#d2d2d2]"
           >
             candidate@example.com <span className="text-green-600 font-semibold">(Valid)</span>
           </button>
           <button
             type="button"
             onClick={() => onSelectSampleCandidate('test@gmail.com')}
-            className="text-xs px-2.5 py-1 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded transition cursor-pointer border border-gray-300"
+            className="text-[18px] px-3 py-2 bg-white hover:bg-gray-50 text-gray-700 rounded-md transition cursor-pointer border border-[#d2d2d2]"
           >
             test@gmail.com <span className="text-green-600 font-semibold">(Valid)</span>
           </button>
           <button
             type="button"
             onClick={() => onSelectSampleCandidate('wrong_user@invalid.com')}
-            className="text-xs px-2.5 py-1 bg-rose-50 hover:bg-rose-100 text-rose-700 rounded transition cursor-pointer border border-rose-200"
+            className="text-[18px] px-3 py-2 bg-white hover:bg-gray-50 text-gray-700 rounded-md transition cursor-pointer border border-[#d2d2d2]"
           >
             wrong_user@invalid.com <span className="text-red-500 font-semibold">(Wrong)</span>
           </button>
